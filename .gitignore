@@ -1,0 +1,202 @@
+# ============================================================
+# MLOps Learning Lab - Git Ignore
+# Python | Jupyter | MLflow | Docker | Kubernetes | Kubeflow
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. macOS
+# ------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+
+# ------------------------------------------------------------
+# 2. Python Virtual Environments
+# ------------------------------------------------------------
+.venv/
+.venv-*/
+venv/
+venv-*/
+env/
+ENV/
+
+
+# ------------------------------------------------------------
+# 3. Python Cache and Compiled Files
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+
+# ------------------------------------------------------------
+# 4. Jupyter Notebook
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+.profile_default/
+
+# Keep .ipynb notebooks in GitHub
+# Do not ignore *.ipynb
+
+
+# ------------------------------------------------------------
+# 5. MLflow
+# ------------------------------------------------------------
+mlruns/
+mlartifacts/
+mlflow.db
+mlflow.db-*
+mlflow.db.*
+mlflow-artifacts/
+
+# Local MLflow metadata
+.mlflow/
+
+
+# ------------------------------------------------------------
+# 6. Logs
+# ------------------------------------------------------------
+logs/
+*.log
+*.log.*
+log/
+
+
+# ------------------------------------------------------------
+# 7. Machine Learning Models and Artifacts
+# ------------------------------------------------------------
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.ckpt
+*.pb
+
+checkpoints/
+artifacts/
+outputs/
+
+
+# ------------------------------------------------------------
+# 8. Datasets
+# ------------------------------------------------------------
+# Exclude generated or large datasets by default.
+# Keep small sample datasets intentionally if needed.
+
+data/
+datasets/
+
+*.parquet
+*.feather
+*.arrow
+
+# Uncomment if you want to exclude ALL CSV files:
+# *.csv
+
+
+# ------------------------------------------------------------
+# 9. Environment Variables and Secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.sample
+
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+
+
+# ------------------------------------------------------------
+# 10. Docker
+# ------------------------------------------------------------
+# Keep Dockerfile, docker-compose.yml and .dockerignore
+# Docker build artifacts
+*.tar
+*.tar.gz
+
+
+# ------------------------------------------------------------
+# 11. Kubernetes and Kubeflow
+# ------------------------------------------------------------
+# Keep Kubernetes YAML and Kubeflow pipeline source code
+
+# Local Kubernetes configuration
+kubeconfig
+kubeconfig.*
+.kube/
+
+# Temporary pipeline artifacts
+pipeline_outputs/
+pipeline_artifacts/
+
+
+# ------------------------------------------------------------
+# 12. Terraform (Future MLOps Infrastructure)
+# ------------------------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep .terraform.lock.hcl for reproducibility
+
+
+# ------------------------------------------------------------
+# 13. IDE and Editors
+# ------------------------------------------------------------
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+*.swp
+*.swo
+*~
+
+
+# ------------------------------------------------------------
+# 14. Temporary Files
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+.cache/
+tmp/
+temp/
