@@ -1,0 +1,92 @@
+# MLflow tracking server + model registry for the four-stage pipeline.
+#   kubectl apply -f mlflow.yaml
+#   kubectl -n mlflow-four-stage rollout status deploy/mlflow
+# In-cluster tracking URI: http://mlflow.mlflow-four-stage.svc.cluster.local:5000
+#
+# The server proxies artifacts (--artifacts-destination), so the evaluate pod can
+# download models that the train pod logged. Runs and models live on the PVC.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mlflow-four-stage
+  labels:
+    istio-injection: disabled  # plain HTTP from pipeline pods, no Istio auth in the way
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mlflow-data
+  namespace: mlflow-four-stage
+spec:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow
+  namespace: mlflow-four-stage
+  labels:
+    app: mlflow
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate  # SQLite + RWO volume: never run two pods at once
+  selector:
+    matchLabels:
+      app: mlflow
+  template:
+    metadata:
+      labels:
+        app: mlflow
+    spec:
+      containers:
+        - name: mlflow
+          # Same MLflow version as the pipeline client (requirements.txt).
+          image: ghcr.io/mlflow/mlflow:v3.16.1
+          command: ["mlflow", "server"]
+          args:
+            - --host=0.0.0.0
+            - --port=5000
+            - --workers=1
+            - --backend-store-uri=sqlite:////mlflow/mlflow.db
+            - --artifacts-destination=/mlflow/artifacts
+            - --serve-artifacts
+            # Host header check: in-cluster service name and port-forward/SSH tunnel.
+            - --allowed-hosts=mlflow*,localhost*,127.0.0.1*
+          ports:
+            - containerPort: 5000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: 100m
+              memory: 512Mi
+            limits:
+              cpu: "1"
+              memory: 2Gi
+          volumeMounts:
+            - name: data
+              mountPath: /mlflow
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: mlflow-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mlflow
+  namespace: mlflow-four-stage
+spec:
+  selector:
+    app: mlflow
+  ports:
+    - port: 5000
+      targetPort: 5000

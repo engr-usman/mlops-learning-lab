@@ -1,0 +1,11 @@
+.venv*
+.verification
+docs
+**/__pycache__
+**/*.pyc
+*.db
+*.tar
+*.log
+.git
+mlruns
+mlartifacts

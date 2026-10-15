@@ -1,0 +1,10 @@
+{
+  "status": "PASS_PROTOBUF_CONTRACT_ONLY",
+  "artifact_names": [
+    "validation_report",
+    "validated_dataset",
+    "configuration"
+  ],
+  "dataset_rows": 10578,
+  "minio_transfer_verified": false
+}

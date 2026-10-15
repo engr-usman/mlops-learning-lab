@@ -1,0 +1,6 @@
+.venv*/
+.verification/
+**/__pycache__/
+*.pyc
+*.tar
+*.db

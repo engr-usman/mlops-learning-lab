@@ -1,0 +1,377 @@
+# PIPELINE DEFINITION
+# Name: lecture-04-bank-marketing-four-stage
+# Description: Validate, train, evaluate and register across four artifact-connected pods.
+# Inputs:
+#    config_path: str [Default: '/app/configs/config.yaml']
+#    dataset_path: str [Default: '/app/data/balance.csv']
+#    tracking_uri: str [Default: 'http://mlflow.mlops.svc.cluster.local:5000']
+components:
+  comp-evaluate-candidates:
+    executorLabel: exec-evaluate-candidates
+    inputDefinitions:
+      artifacts:
+        candidate_manifest:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+        configuration:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+        heldout_dataset:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+        split_metadata:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+      parameters:
+        tracking_uri:
+          parameterType: STRING
+    outputDefinitions:
+      artifacts:
+        evaluation_metrics:
+          artifactType:
+            schemaTitle: system.Metrics
+            schemaVersion: 0.0.1
+        evaluation_report:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+  comp-register-winner:
+    executorLabel: exec-register-winner
+    inputDefinitions:
+      artifacts:
+        configuration:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+        evaluation_report:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+      parameters:
+        tracking_uri:
+          parameterType: STRING
+    outputDefinitions:
+      artifacts:
+        registration_result:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+  comp-train-candidates:
+    executorLabel: exec-train-candidates
+    inputDefinitions:
+      artifacts:
+        configuration:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+        validated_dataset:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+        validation_report:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+      parameters:
+        execution_id:
+          parameterType: STRING
+        tracking_uri:
+          parameterType: STRING
+    outputDefinitions:
+      artifacts:
+        candidate_manifest:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+        heldout_dataset:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+        split_metadata:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+  comp-validate-dataset:
+    executorLabel: exec-validate-dataset
+    inputDefinitions:
+      parameters:
+        config_path:
+          parameterType: STRING
+        dataset_path:
+          parameterType: STRING
+    outputDefinitions:
+      artifacts:
+        configuration:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+        validated_dataset:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+        validation_report:
+          artifactType:
+            schemaTitle: system.Artifact
+            schemaVersion: 0.0.1
+deploymentSpec:
+  executors:
+    exec-evaluate-candidates:
+      container:
+        args:
+        - evaluate
+        - --manifest
+        - '{{$.inputs.artifacts[''candidate_manifest''].path}}'
+        - --heldout
+        - '{{$.inputs.artifacts[''heldout_dataset''].path}}'
+        - --split
+        - '{{$.inputs.artifacts[''split_metadata''].path}}'
+        - --snapshot
+        - '{{$.inputs.artifacts[''configuration''].path}}'
+        - --tracking-uri
+        - '{{$.inputs.parameters[''tracking_uri'']}}'
+        - --evaluation
+        - '{{$.outputs.artifacts[''evaluation_report''].path}}'
+        - --metrics
+        - '{{$.outputs.artifacts[''evaluation_metrics''].path}}'
+        - --executor-input
+        - '{{$}}'
+        command:
+        - python
+        - -m
+        - src.component_cli
+        image: bank-marketing-kfp-four-stage:v1
+        resources:
+          cpuLimit: 1.0
+          cpuRequest: 0.25
+          memoryLimit: 2.147483648
+          memoryRequest: 0.536870912
+          resourceCpuLimit: '1'
+          resourceCpuRequest: 250m
+          resourceMemoryLimit: 2Gi
+          resourceMemoryRequest: 512Mi
+    exec-register-winner:
+      container:
+        args:
+        - register
+        - --evaluation
+        - '{{$.inputs.artifacts[''evaluation_report''].path}}'
+        - --snapshot
+        - '{{$.inputs.artifacts[''configuration''].path}}'
+        - --tracking-uri
+        - '{{$.inputs.parameters[''tracking_uri'']}}'
+        - --registration
+        - '{{$.outputs.artifacts[''registration_result''].path}}'
+        - --executor-input
+        - '{{$}}'
+        command:
+        - python
+        - -m
+        - src.component_cli
+        image: bank-marketing-kfp-four-stage:v1
+        resources:
+          cpuLimit: 1.0
+          cpuRequest: 0.1
+          memoryLimit: 1.073741824
+          memoryRequest: 0.268435456
+          resourceCpuLimit: '1'
+          resourceCpuRequest: 100m
+          resourceMemoryLimit: 1Gi
+          resourceMemoryRequest: 256Mi
+    exec-train-candidates:
+      container:
+        args:
+        - train
+        - --validated
+        - '{{$.inputs.artifacts[''validated_dataset''].path}}'
+        - --snapshot
+        - '{{$.inputs.artifacts[''configuration''].path}}'
+        - --validation
+        - '{{$.inputs.artifacts[''validation_report''].path}}'
+        - --tracking-uri
+        - '{{$.inputs.parameters[''tracking_uri'']}}'
+        - --execution-id
+        - '{{$.inputs.parameters[''execution_id'']}}'
+        - --manifest
+        - '{{$.outputs.artifacts[''candidate_manifest''].path}}'
+        - --heldout
+        - '{{$.outputs.artifacts[''heldout_dataset''].path}}'
+        - --split
+        - '{{$.outputs.artifacts[''split_metadata''].path}}'
+        - --executor-input
+        - '{{$}}'
+        command:
+        - python
+        - -m
+        - src.component_cli
+        image: bank-marketing-kfp-four-stage:v1
+        resources:
+          cpuLimit: 2.0
+          cpuRequest: 0.5
+          memoryLimit: 3.221225472
+          memoryRequest: 1.073741824
+          resourceCpuLimit: '2'
+          resourceCpuRequest: 500m
+          resourceMemoryLimit: 3Gi
+          resourceMemoryRequest: 1Gi
+    exec-validate-dataset:
+      container:
+        args:
+        - validate
+        - --dataset
+        - '{{$.inputs.parameters[''dataset_path'']}}'
+        - --config
+        - '{{$.inputs.parameters[''config_path'']}}'
+        - --validated
+        - '{{$.outputs.artifacts[''validated_dataset''].path}}'
+        - --snapshot
+        - '{{$.outputs.artifacts[''configuration''].path}}'
+        - --validation
+        - '{{$.outputs.artifacts[''validation_report''].path}}'
+        - --executor-input
+        - '{{$}}'
+        command:
+        - python
+        - -m
+        - src.component_cli
+        image: bank-marketing-kfp-four-stage:v1
+        resources:
+          cpuLimit: 1.0
+          cpuRequest: 0.1
+          memoryLimit: 1.073741824
+          memoryRequest: 0.268435456
+          resourceCpuLimit: '1'
+          resourceCpuRequest: 100m
+          resourceMemoryLimit: 1Gi
+          resourceMemoryRequest: 256Mi
+pipelineInfo:
+  description: Validate, train, evaluate and register across four artifact-connected
+    pods.
+  name: lecture-04-bank-marketing-four-stage
+root:
+  dag:
+    tasks:
+      evaluate-candidates:
+        cachingOptions: {}
+        componentRef:
+          name: comp-evaluate-candidates
+        dependentTasks:
+        - train-candidates
+        - validate-dataset
+        inputs:
+          artifacts:
+            candidate_manifest:
+              taskOutputArtifact:
+                outputArtifactKey: candidate_manifest
+                producerTask: train-candidates
+            configuration:
+              taskOutputArtifact:
+                outputArtifactKey: configuration
+                producerTask: validate-dataset
+            heldout_dataset:
+              taskOutputArtifact:
+                outputArtifactKey: heldout_dataset
+                producerTask: train-candidates
+            split_metadata:
+              taskOutputArtifact:
+                outputArtifactKey: split_metadata
+                producerTask: train-candidates
+          parameters:
+            tracking_uri:
+              componentInputParameter: tracking_uri
+        taskInfo:
+          name: evaluate-candidates
+      register-winner:
+        cachingOptions: {}
+        componentRef:
+          name: comp-register-winner
+        dependentTasks:
+        - evaluate-candidates
+        - validate-dataset
+        inputs:
+          artifacts:
+            configuration:
+              taskOutputArtifact:
+                outputArtifactKey: configuration
+                producerTask: validate-dataset
+            evaluation_report:
+              taskOutputArtifact:
+                outputArtifactKey: evaluation_report
+                producerTask: evaluate-candidates
+          parameters:
+            tracking_uri:
+              componentInputParameter: tracking_uri
+        taskInfo:
+          name: register-winner
+      train-candidates:
+        cachingOptions: {}
+        componentRef:
+          name: comp-train-candidates
+        dependentTasks:
+        - validate-dataset
+        inputs:
+          artifacts:
+            configuration:
+              taskOutputArtifact:
+                outputArtifactKey: configuration
+                producerTask: validate-dataset
+            validated_dataset:
+              taskOutputArtifact:
+                outputArtifactKey: validated_dataset
+                producerTask: validate-dataset
+            validation_report:
+              taskOutputArtifact:
+                outputArtifactKey: validation_report
+                producerTask: validate-dataset
+          parameters:
+            execution_id:
+              runtimeValue:
+                constant: '{{$.pipeline_job_uuid}}'
+            tracking_uri:
+              componentInputParameter: tracking_uri
+        taskInfo:
+          name: train-candidates
+      validate-dataset:
+        cachingOptions: {}
+        componentRef:
+          name: comp-validate-dataset
+        inputs:
+          parameters:
+            config_path:
+              componentInputParameter: config_path
+            dataset_path:
+              componentInputParameter: dataset_path
+        taskInfo:
+          name: validate-dataset
+  inputDefinitions:
+    parameters:
+      config_path:
+        defaultValue: /app/configs/config.yaml
+        isOptional: true
+        parameterType: STRING
+      dataset_path:
+        defaultValue: /app/data/balance.csv
+        isOptional: true
+        parameterType: STRING
+      tracking_uri:
+        defaultValue: http://mlflow.mlops.svc.cluster.local:5000
+        isOptional: true
+        parameterType: STRING
+schemaVersion: 2.1.0
+sdkVersion: kfp-2.17.0
+---
+platforms:
+  kubernetes:
+    deploymentSpec:
+      executors:
+        exec-evaluate-candidates:
+          imagePullPolicy: IfNotPresent
+        exec-register-winner:
+          imagePullPolicy: IfNotPresent
+        exec-train-candidates:
+          imagePullPolicy: IfNotPresent
+        exec-validate-dataset:
+          imagePullPolicy: IfNotPresent

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "execution_id": "local-proof-20261013T110612Z",
+  "parent_run_id": "d777eafa6a244c399c07932525b62cf5",
+  "experiment_id": "1",
+  "candidates": [
+    {
+      "model_name": "logistic_regression",
+      "run_id": "4f8ece1f529a497fab6d2b3be4d5d52f",
+      "model_uri": "models:/m-e2e31285bd6a4be284bbbdcbf8f7b794",
+      "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+    },
+    {
+      "model_name": "decision_tree",
+      "run_id": "22f47d882a3747dbbee69b3ae487acfb",
+      "model_uri": "models:/m-c437b48b98914d898c2ed33ae080625a",
+      "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+    },
+    {
+      "model_name": "random_forest",
+      "run_id": "113aa2252316439090a04f8d4f2ab92a",
+      "model_uri": "models:/m-ba8956d36ef840d4ba66cb41b40d46a3",
+      "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+    },
+    {
+      "model_name": "gradient_boosting",
+      "run_id": "c6a6f85cf51a4a618070082c1011f9cf",
+      "model_uri": "models:/m-bcb30f66d7dd4edcbd3c77477bdf248c",
+      "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+    }
+  ],
+  "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04",
+  "split_metadata_sha256": "9a3afb31d10a40ff34b055aa10c370c8e77fe012ccea8510be3898193031004b",
+  "config_sha256": "c1a706c294499afa0baaf3cb9e50e6c0c8b1c87732e946bd604d4d12e37f7427",
+  "source_dataset_sha256": "20aa76acd481aa885c782d43747082c59702ecae80a98d9c8a3cec22c3291b1e"
+}

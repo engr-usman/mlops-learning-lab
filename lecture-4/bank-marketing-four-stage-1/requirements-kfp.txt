@@ -1,0 +1,6 @@
+# Separate compiler environment; actual compilation uses these installed versions.
+kfp==2.17.0
+kfp-pipeline-spec==2.17.0
+kfp-server-api==2.17.0
+protobuf==6.33.6
+PyYAML==6.0.3

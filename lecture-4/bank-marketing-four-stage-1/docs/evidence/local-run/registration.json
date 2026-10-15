@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "registered",
+  "registered_model_name": "bank-marketing-pipeline-model",
+  "registered_model_version": "1",
+  "parent_run_id": "d777eafa6a244c399c07932525b62cf5",
+  "experiment_id": "1",
+  "execution_id": "local-proof-20261013T110612Z",
+  "selected_model": "decision_tree",
+  "selected_run_id": "22f47d882a3747dbbee69b3ae487acfb",
+  "selected_model_uri": "models:/m-c437b48b98914d898c2ed33ae080625a",
+  "summary_metrics": {
+    "accuracy": 0.9834593572778828,
+    "precision": 1.0,
+    "recall": 0.9669187145557656,
+    "f1_score": 0.9831811629024507
+  },
+  "quality_gate": {
+    "passed": true,
+    "minimum_accuracy": 0.7,
+    "selection_metric": "f1_score"
+  },
+  "registration_key": "93c01b76dd8df4186ad9ebee9810caba440c2e4a8b7d5625d350872cd313b1f9",
+  "reused_existing_version": true
+}

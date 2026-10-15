@@ -1,0 +1,358 @@
+{
+  "root": "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z",
+  "verification_scope": "local processes, files and isolated MLflow only",
+  "started_utc": "20261013T110612Z",
+  "tracking_uri": "sqlite:////home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/mlflow.db",
+  "experiment_id": "1",
+  "stages": [
+    {
+      "stage": "validate",
+      "pid": 19,
+      "command": [
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.venv/bin/python",
+        "-m",
+        "src.component_cli",
+        "validate",
+        "--dataset",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/source.csv",
+        "--config",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/configs/config.yaml",
+        "--validated",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/validated.csv",
+        "--snapshot",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/configuration.json",
+        "--validation",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/validation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 5.025
+    },
+    {
+      "stage": "train",
+      "pid": 47,
+      "command": [
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.venv/bin/python",
+        "-m",
+        "src.component_cli",
+        "train",
+        "--validated",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/validated.csv",
+        "--snapshot",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/configuration.json",
+        "--validation",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/validation.json",
+        "--tracking-uri",
+        "sqlite:////home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/mlflow.db",
+        "--execution-id",
+        "local-proof-20261013T110612Z",
+        "--manifest",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/manifest.json",
+        "--heldout",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/heldout.csv",
+        "--split",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/split.json"
+      ],
+      "exit_code": 0,
+      "seconds": 18.152
+    },
+    {
+      "stage": "evaluate",
+      "pid": 180,
+      "command": [
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.venv/bin/python",
+        "-m",
+        "src.component_cli",
+        "evaluate",
+        "--manifest",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/manifest.json",
+        "--heldout",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/heldout.csv",
+        "--split",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/split.json",
+        "--snapshot",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/configuration.json",
+        "--tracking-uri",
+        "sqlite:////home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/mlflow.db",
+        "--evaluation",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/evaluation.json",
+        "--metrics",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/metrics.json"
+      ],
+      "exit_code": 0,
+      "seconds": 5.674
+    },
+    {
+      "stage": "register",
+      "pid": 207,
+      "command": [
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.venv/bin/python",
+        "-m",
+        "src.component_cli",
+        "register",
+        "--evaluation",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/evaluation.json",
+        "--snapshot",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/configuration.json",
+        "--tracking-uri",
+        "sqlite:////home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/mlflow.db",
+        "--registration",
+        "/home/usman/Desktop/mlops-k8s/lectures/lecture-04-kubeflow/bank-marketing-four-stage/.verification/local-20261013T110612Z/registration.json"
+      ],
+      "exit_code": 0,
+      "seconds": 4.522
+    }
+  ],
+  "registered_model_predictions": [
+    "yes",
+    "yes",
+    "yes"
+  ],
+  "manifest": {
+    "schema_version": 1,
+    "execution_id": "local-proof-20261013T110612Z",
+    "parent_run_id": "d777eafa6a244c399c07932525b62cf5",
+    "experiment_id": "1",
+    "candidates": [
+      {
+        "model_name": "logistic_regression",
+        "run_id": "4f8ece1f529a497fab6d2b3be4d5d52f",
+        "model_uri": "models:/m-e2e31285bd6a4be284bbbdcbf8f7b794",
+        "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+      },
+      {
+        "model_name": "decision_tree",
+        "run_id": "22f47d882a3747dbbee69b3ae487acfb",
+        "model_uri": "models:/m-c437b48b98914d898c2ed33ae080625a",
+        "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+      },
+      {
+        "model_name": "random_forest",
+        "run_id": "113aa2252316439090a04f8d4f2ab92a",
+        "model_uri": "models:/m-ba8956d36ef840d4ba66cb41b40d46a3",
+        "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+      },
+      {
+        "model_name": "gradient_boosting",
+        "run_id": "c6a6f85cf51a4a618070082c1011f9cf",
+        "model_uri": "models:/m-bcb30f66d7dd4edcbd3c77477bdf248c",
+        "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+      }
+    ],
+    "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04",
+    "split_metadata_sha256": "9a3afb31d10a40ff34b055aa10c370c8e77fe012ccea8510be3898193031004b",
+    "config_sha256": "c1a706c294499afa0baaf3cb9e50e6c0c8b1c87732e946bd604d4d12e37f7427",
+    "source_dataset_sha256": "20aa76acd481aa885c782d43747082c59702ecae80a98d9c8a3cec22c3291b1e"
+  },
+  "evaluation": {
+    "parent_run_id": "d777eafa6a244c399c07932525b62cf5",
+    "experiment_id": "1",
+    "execution_id": "local-proof-20261013T110612Z",
+    "config_sha256": "c1a706c294499afa0baaf3cb9e50e6c0c8b1c87732e946bd604d4d12e37f7427",
+    "source_dataset_sha256": "20aa76acd481aa885c782d43747082c59702ecae80a98d9c8a3cec22c3291b1e",
+    "schema_version": 1,
+    "candidates": [
+      {
+        "model_name": "logistic_regression",
+        "run_id": "4f8ece1f529a497fab6d2b3be4d5d52f",
+        "model_uri": "models:/m-e2e31285bd6a4be284bbbdcbf8f7b794",
+        "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04",
+        "metrics": {
+          "accuracy": 0.9792060491493384,
+          "precision": 0.9875,
+          "recall": 0.9706994328922496,
+          "f1_score": 0.9790276453765491
+        },
+        "eligible": true,
+        "confusion_matrix": {
+          "labels": [
+            "no",
+            "yes"
+          ],
+          "counts": [
+            [
+              1045,
+              13
+            ],
+            [
+              31,
+              1027
+            ]
+          ]
+        }
+      },
+      {
+        "model_name": "decision_tree",
+        "run_id": "22f47d882a3747dbbee69b3ae487acfb",
+        "model_uri": "models:/m-c437b48b98914d898c2ed33ae080625a",
+        "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04",
+        "metrics": {
+          "accuracy": 0.9834593572778828,
+          "precision": 1.0,
+          "recall": 0.9669187145557656,
+          "f1_score": 0.9831811629024507
+        },
+        "eligible": true,
+        "confusion_matrix": {
+          "labels": [
+            "no",
+            "yes"
+          ],
+          "counts": [
+            [
+              1058,
+              0
+            ],
+            [
+              35,
+              1023
+            ]
+          ]
+        }
+      },
+      {
+        "model_name": "random_forest",
+        "run_id": "113aa2252316439090a04f8d4f2ab92a",
+        "model_uri": "models:/m-ba8956d36ef840d4ba66cb41b40d46a3",
+        "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04",
+        "metrics": {
+          "accuracy": 0.9825141776937618,
+          "precision": 0.9922854387656702,
+          "recall": 0.9725897920604915,
+          "f1_score": 0.9823389021479714
+        },
+        "eligible": true,
+        "confusion_matrix": {
+          "labels": [
+            "no",
+            "yes"
+          ],
+          "counts": [
+            [
+              1050,
+              8
+            ],
+            [
+              29,
+              1029
+            ]
+          ]
+        }
+      },
+      {
+        "model_name": "gradient_boosting",
+        "run_id": "c6a6f85cf51a4a618070082c1011f9cf",
+        "model_uri": "models:/m-bcb30f66d7dd4edcbd3c77477bdf248c",
+        "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04",
+        "metrics": {
+          "accuracy": 0.9829867674858223,
+          "precision": 0.9922928709055877,
+          "recall": 0.9735349716446124,
+          "f1_score": 0.982824427480916
+        },
+        "eligible": true,
+        "confusion_matrix": {
+          "labels": [
+            "no",
+            "yes"
+          ],
+          "counts": [
+            [
+              1050,
+              8
+            ],
+            [
+              28,
+              1030
+            ]
+          ]
+        }
+      }
+    ],
+    "selected_candidate": {
+      "model_name": "decision_tree",
+      "run_id": "22f47d882a3747dbbee69b3ae487acfb",
+      "model_uri": "models:/m-c437b48b98914d898c2ed33ae080625a",
+      "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04",
+      "metrics": {
+        "accuracy": 0.9834593572778828,
+        "precision": 1.0,
+        "recall": 0.9669187145557656,
+        "f1_score": 0.9831811629024507
+      },
+      "eligible": true,
+      "confusion_matrix": {
+        "labels": [
+          "no",
+          "yes"
+        ],
+        "counts": [
+          [
+            1058,
+            0
+          ],
+          [
+            35,
+            1023
+          ]
+        ]
+      }
+    },
+    "quality_gate": {
+      "passed": true,
+      "minimum_accuracy": 0.7,
+      "selection_metric": "f1_score"
+    },
+    "heldout_sha256": "2e1895378187b6c1ca07ea43ccb04a20fd35c97325a00fccd639124763008b04"
+  },
+  "registration": {
+    "schema_version": 1,
+    "status": "registered",
+    "registered_model_name": "bank-marketing-pipeline-model",
+    "registered_model_version": "1",
+    "parent_run_id": "d777eafa6a244c399c07932525b62cf5",
+    "experiment_id": "1",
+    "execution_id": "local-proof-20261013T110612Z",
+    "selected_model": "decision_tree",
+    "selected_run_id": "22f47d882a3747dbbee69b3ae487acfb",
+    "selected_model_uri": "models:/m-c437b48b98914d898c2ed33ae080625a",
+    "summary_metrics": {
+      "accuracy": 0.9834593572778828,
+      "precision": 1.0,
+      "recall": 0.9669187145557656,
+      "f1_score": 0.9831811629024507
+    },
+    "quality_gate": {
+      "passed": true,
+      "minimum_accuracy": 0.7,
+      "selection_metric": "f1_score"
+    },
+    "registration_key": "93c01b76dd8df4186ad9ebee9810caba440c2e4a8b7d5625d350872cd313b1f9",
+    "reused_existing_version": false
+  },
+  "retry_registration": {
+    "schema_version": 1,
+    "status": "registered",
+    "registered_model_name": "bank-marketing-pipeline-model",
+    "registered_model_version": "1",
+    "parent_run_id": "d777eafa6a244c399c07932525b62cf5",
+    "experiment_id": "1",
+    "execution_id": "local-proof-20261013T110612Z",
+    "selected_model": "decision_tree",
+    "selected_run_id": "22f47d882a3747dbbee69b3ae487acfb",
+    "selected_model_uri": "models:/m-c437b48b98914d898c2ed33ae080625a",
+    "summary_metrics": {
+      "accuracy": 0.9834593572778828,
+      "precision": 1.0,
+      "recall": 0.9669187145557656,
+      "f1_score": 0.9831811629024507
+    },
+    "quality_gate": {
+      "passed": true,
+      "minimum_accuracy": 0.7,
+      "selection_metric": "f1_score"
+    },
+    "registration_key": "93c01b76dd8df4186ad9ebee9810caba440c2e4a8b7d5625d350872cd313b1f9",
+    "reused_existing_version": true
+  },
+  "status": "PASS_LOCAL_ONLY"
+}

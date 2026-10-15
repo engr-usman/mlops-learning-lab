@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "validation_status": "PASSED",
+  "rows": 10578,
+  "columns": 17,
+  "feature_count": 16,
+  "source_dataset_sha256": "20aa76acd481aa885c782d43747082c59702ecae80a98d9c8a3cec22c3291b1e",
+  "validated_dataset_sha256": "20aa76acd481aa885c782d43747082c59702ecae80a98d9c8a3cec22c3291b1e",
+  "config_sha256": "c1a706c294499afa0baaf3cb9e50e6c0c8b1c87732e946bd604d4d12e37f7427",
+  "class_counts": {
+    "yes": 5289,
+    "no": 5289
+  },
+  "features": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "contact",
+    "day",
+    "month",
+    "duration",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome"
+  ],
+  "target": "y"
+}

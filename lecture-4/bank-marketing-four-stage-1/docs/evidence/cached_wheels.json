@@ -1,0 +1,1172 @@
+[
+  {
+    "name": "idna",
+    "version": "3.19",
+    "filename": "idna-3.19-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/f/7/2/2/9/f7229a960ae0f3c85284fc889fb6766d97711617a975a2ece72f9a7d.body"
+  },
+  {
+    "name": "kubernetes",
+    "version": "30.1.0",
+    "filename": "kubernetes-30.1.0-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/f/7/c/c/2/f7cc261b94fe81b5dd80c8517808ad4ff7148bd26461b7688227e8fd.body"
+  },
+  {
+    "name": "proto-plus",
+    "version": "1.29.0",
+    "filename": "proto_plus-1.29.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/f/8/f/4/5/f8f4531eac427d263e909a7b6108de0e6f859071c5a4189477404b70.body"
+  },
+  {
+    "name": "pip",
+    "version": "26.1.1",
+    "filename": "pip-26.1.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/f/d/b/4/7/fdb47d08c657290594ceebdd2e8ef27031a2b817d1dd870863649975.body"
+  },
+  {
+    "name": "wcwidth",
+    "version": "0.9.1",
+    "filename": "wcwidth-0.9.1-cp310-abi3-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/f/4/0/0/f/f400fff199026c6e4bafa6f8721515c4e0f460395edcd4e0f0debb3d.body"
+  },
+  {
+    "name": "pexpect",
+    "version": "4.9.0",
+    "filename": "pexpect-4.9.0-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/f/3/a/6/5/f3a6530dc7fb03fabb45f38f86d64f93ec229749526b88172b3d7d2f.body"
+  },
+  {
+    "name": "starlette",
+    "version": "1.7.0",
+    "filename": "starlette-1.7.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/f/a/7/0/9/fa7097425a3872e366a3eebe7d8a113d339126daabe29fb73b083ec4.body"
+  },
+  {
+    "name": "scipy",
+    "version": "1.18.1",
+    "filename": "scipy-1.18.1-cp314-cp314-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/f/9/b/9/f/f9b9fc438c4324f29ae2cece89df7e7a5decf1d54f9b68a672f0cdeb.body"
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "filename": "cffi-2.1.1-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/f/7/a/6/7f7a600674a727cead30b983da7467636db9e23bceef73593f9028e5.body"
+  },
+  {
+    "name": "ipykernel",
+    "version": "7.3.0",
+    "filename": "ipykernel-7.3.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/6/3/1/2/76312ba0df37288cec51a08650fa8624f551b5d5b40762e26865a166.body"
+  },
+  {
+    "name": "comm",
+    "version": "0.2.3",
+    "filename": "comm-0.2.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/0/d/d/e/70dde99d7cb256be05550b66f60781185030b6e63a40f406ffb4bf98.body"
+  },
+  {
+    "name": "zstandard",
+    "version": "0.25.0",
+    "filename": "zstandard-0.25.0-cp311-cp311-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/0/4/d/7/704d709cc67145507df80c82a55da31df2f95f9d9f7c555af6a03e75.body"
+  },
+  {
+    "name": "prettytable",
+    "version": "3.18.0",
+    "filename": "prettytable-3.18.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/2/4/9/0/72490fef816289d756a7701cb91a79e656d1b832e40e50e430a14d3b.body"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "2.9.0.post0",
+    "filename": "python_dateutil-2.9.0.post0-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/d/0/6/d/7d06ddc2f8070ce09a5a2290e2020c460e8ab32b6a2c6b69fc06e979.body"
+  },
+  {
+    "name": "aiohttp",
+    "version": "3.14.3",
+    "filename": "aiohttp-3.14.3-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/5/5/8/1/75581f5414caac3d9b6572daee5961b84f5b038eab174a0f6ef2fe68.body"
+  },
+  {
+    "name": "contourpy",
+    "version": "1.4.0",
+    "filename": "contourpy-1.4.0-cp314-cp314-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/5/1/4/4/7514476cc872bc827dd16c3d0fbb711d8ce467b56438b3b6d0042c76.body"
+  },
+  {
+    "name": "pillow",
+    "version": "12.3.0",
+    "filename": "pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/b/e/e/4/7bee4e054f82a46705807cab36575aae8dd4ed3af2b55134559a3f9d.body"
+  },
+  {
+    "name": "google-resumable-media",
+    "version": "2.11.0",
+    "filename": "google_resumable_media-2.11.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/c/2/7/7/7c277f31c85503989f692653801137b2b9fe655cd86578309ac1e34f.body"
+  },
+  {
+    "name": "flask-cors",
+    "version": "6.0.5",
+    "filename": "flask_cors-6.0.5-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/c/d/4/1/7cd414325096af01dae23c029f367e8aaa7b42b99dd0744a845af947.body"
+  },
+  {
+    "name": "ollama",
+    "version": "0.6.2",
+    "filename": "ollama-0.6.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/7/3/d/7/a/73d7a79e92f6ede0562a8a964e9459f764bc29f32b663c2a298d1fe4.body"
+  },
+  {
+    "name": "jupyter_client",
+    "version": "8.10.0",
+    "filename": "jupyter_client-8.10.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/f/3/d/1/6f3d138ea1fbae4f7130cfedfd96e371325cfe683b5ef4c671b59457.body"
+  },
+  {
+    "name": "ptyprocess",
+    "version": "0.7.0",
+    "filename": "ptyprocess-0.7.0-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/7/f/5/b/67f5b5747518cbf74987d367c9e086a003d777484ff6398b7b101a95.body"
+  },
+  {
+    "name": "mlflow-skinny",
+    "version": "3.16.1",
+    "filename": "mlflow_skinny-3.16.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/d/f/a/1/6dfa1b60cb8faddc05efd429332a6ade8b30cc08840919b455b32697.body"
+  },
+  {
+    "name": "pyzmq",
+    "version": "27.2.0",
+    "filename": "pyzmq-27.2.0-cp312-abi3-manylinux_2_26_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/4/0/2/2/640228597169a1ddded822592b707013dff41cc49c2d2b2543b20426.body"
+  },
+  {
+    "name": "jupyter_core",
+    "version": "5.9.1",
+    "filename": "jupyter_core-5.9.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/4/1/b/0/641b049a1c8d28f6c0248a858726a0660819f081e11bc493dcf64483.body"
+  },
+  {
+    "name": "Flask",
+    "version": "3.1.3",
+    "filename": "flask-3.1.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/b/4/5/0/6b45031933f860a66862d8bbeab086b552ed37baed1b67b4fcc475ec.body"
+  },
+  {
+    "name": "wcwidth",
+    "version": "0.8.3",
+    "filename": "wcwidth-0.8.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/1/5/b/0/615b08aebbaa5d20f400dfea7f60d0f6c45747743e659221f4baf8da.body"
+  },
+  {
+    "name": "cycler",
+    "version": "0.12.1",
+    "filename": "cycler-0.12.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/c/6/e/e/6c6eeaf6757edbde690577822daacaba826c2b12ce67b57b33e8021d.body"
+  },
+  {
+    "name": "kiwisolver",
+    "version": "1.5.1",
+    "filename": "kiwisolver-1.5.1-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/3/6/f/9/636f929ef1962c0b8e167e0793923fa97fd6677d72666a681c63f698.body"
+  },
+  {
+    "name": "huey",
+    "version": "3.4.0",
+    "filename": "huey-3.4.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/6/9/b/3/7/69b37be94f5eeb039838ddc25392cd77b72dcfd72ae32b5e835ac288.body"
+  },
+  {
+    "name": "MarkupSafe",
+    "version": "3.0.3",
+    "filename": "markupsafe-3.0.3-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/7/8/4/3/0784361077e99613a1ca4e859fa8578dfa205977d3ae31b0fbd55357.body"
+  },
+  {
+    "name": "Jinja2",
+    "version": "3.1.6",
+    "filename": "jinja2-3.1.6-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549.body"
+  },
+  {
+    "name": "python-dotenv",
+    "version": "1.2.3",
+    "filename": "python_dotenv-1.2.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/6/d/c/4/06dc473e2a0f35d2c99caf3e5ce93bfd9222f2778b6de6d716145ad6.body"
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "filename": "pygments-2.21.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/0/4/f/5/004f51e4cdaa64d7951a6294c47f410a2290cde6415bd52c394181fd.body"
+  },
+  {
+    "name": "asttokens",
+    "version": "3.0.2",
+    "filename": "asttokens-3.0.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/0/4/8/0/004806b0fb647e1403e847bbbddba0c566d3ff7f95bd6d6e7b4be0d9.body"
+  },
+  {
+    "name": "anyio",
+    "version": "4.14.1",
+    "filename": "anyio-4.14.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/2/5/1/9/025191b75c2cde9a99fccc97027ada1693caa2834ff0cef7346c3e8f.body"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "filename": "charset_normalizer-3.5.1-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/d/d/f/3/0ddf3da1bd23b188cd74a9d99e744d094f1b0bb76f98a722a39006e3.body"
+  },
+  {
+    "name": "annotated-types",
+    "version": "0.7.0",
+    "filename": "annotated_types-0.7.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/d/d/c/c/0ddcc4d907dd4d8c3307074b6869d260abb891f5178579de5abe7eff.body"
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.46.5",
+    "filename": "pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/d/b/8/0/0db8094dfea3203e62dd8a02499b7fe177d92afa7db0d0080d33ada7.body"
+  },
+  {
+    "name": "pyasn1_modules",
+    "version": "0.4.2",
+    "filename": "pyasn1_modules-0.4.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/d/1/4/f/0d14f0a32e377d1190bc8dbae6962e0633b69fffba8a6160afbc8e6f.body"
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.2",
+    "filename": "cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/4/7/9/c/0479ce859c7c6e6995bb29588985f020b02188d79a9e0a811760e423.body"
+  },
+  {
+    "name": "alembic",
+    "version": "1.20.0",
+    "filename": "alembic-1.20.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/5/f/2/e/05f2e2144d016e62bc0edf9365f823806563731493232bf873badef4.body"
+  },
+  {
+    "name": "tornado",
+    "version": "6.5.9",
+    "filename": "tornado-6.5.9-cp39-abi3-manylinux_2_5_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/1/1/b/a/011ba3800ea701daf97f52ff19881f3c5da720328335df54b5d5fab3.body"
+  },
+  {
+    "name": "google-auth",
+    "version": "2.62.0",
+    "filename": "google_auth-2.62.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/c/2/0/8/0c208c0934a911dfee994ba48aa081b57cb3b0291b3758ff42148193.body"
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "filename": "requests-2.34.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/a/6/b/7/0a6b76df38e61ac4e1f757a1132d2c6424dcb9c23751423afee448ac.body"
+  },
+  {
+    "name": "propcache",
+    "version": "0.5.4",
+    "filename": "propcache-0.5.4-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/9/4/1/d/0941de20d6ba4076ab3dee7977f754068ad1bf62a443770298229039.body"
+  },
+  {
+    "name": "graphql-core",
+    "version": "3.2.12",
+    "filename": "graphql_core-3.2.12-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/0/9/a/f/c/09afc8bf879575e55339b460f25338516670fd463cbb77719c1187f2.body"
+  },
+  {
+    "name": "google-auth",
+    "version": "2.58.1",
+    "filename": "google_auth-2.58.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/f/2/1/d/8f21d87c70d4e6cc2feb81c25d2c00a40a289c00e367910ad1ff8dc7.body"
+  },
+  {
+    "name": "fonttools",
+    "version": "4.65.0",
+    "filename": "fonttools-4.65.0-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/f/1/0/4/8f10417950b538d8738016da4999d92c23f2a2451b0c3d9ba1b22535.body"
+  },
+  {
+    "name": "googleapis-common-protos",
+    "version": "1.75.5",
+    "filename": "googleapis_common_protos-1.75.5-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/8/8/1/9/88819ed2a6c14ec2ea936158e1aa9561fb5e1a61b36a434e70681954.body"
+  },
+  {
+    "name": "click-option-group",
+    "version": "0.5.7",
+    "filename": "click_option_group-0.5.7-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/4/c/5/4/84c546184b7056ae6b86b0c074c795df64764aa76a5c5244896f3e58.body"
+  },
+  {
+    "name": "narwhals",
+    "version": "2.26.0",
+    "filename": "narwhals-2.26.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/4/e/e/6/84ee62cf6540e5249f17bf6e9599302f6678ac0f44b35de8dea7d60e.body"
+  },
+  {
+    "name": "frozenlist",
+    "version": "1.8.0",
+    "filename": "frozenlist-1.8.0-cp314-cp314-manylinux_2_5_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/b/3/a/a/8b3aa4cb764353f16a423a979bf7caeffe2c996753a25df475e5a39b.body"
+  },
+  {
+    "name": "google-crc32c",
+    "version": "1.9.0",
+    "filename": "google_crc32c-1.9.0-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/c/7/7/6/8c7767cf388a4edcef5209e57996a0b01870803ef11f00ed55d19a5c.body"
+  },
+  {
+    "name": "aiosignal",
+    "version": "1.4.0",
+    "filename": "aiosignal-1.4.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/c/d/4/6/8cd46de09fab9942ca46d5db7df4d49166a3ba9ae11a8ad0ad906daa.body"
+  },
+  {
+    "name": "skops",
+    "version": "0.16.0",
+    "filename": "skops-0.16.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/3/e/c/f/83ecf6a7c14916cf6b630c74238e5b2a056cd6e6c69cec820fc62149.body"
+  },
+  {
+    "name": "google-api-core",
+    "version": "2.42.0",
+    "filename": "google_api_core-2.42.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/9/6/4/9/896493b7d40a2e631b1b61308fc3bbbeff0e5e67634e55ea2c2cca37.body"
+  },
+  {
+    "name": "pip",
+    "version": "26.2.1",
+    "filename": "pip-26.2.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/8/9/1/7/2/89172e1b67e9e3c9854025385bfb7d37adaa89601789d98df17ff2ea.body"
+  },
+  {
+    "name": "clickhouse-connect",
+    "version": "0.15.1",
+    "filename": "clickhouse_connect-0.15.1-cp311-cp311-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/6/9/8/8/26988c76788ba5b2a176c8738994953ae2ceacf393506ec07e8caa8d.body"
+  },
+  {
+    "name": "cloudpickle",
+    "version": "3.1.2",
+    "filename": "cloudpickle-3.1.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/0/e/1/0/20e10f4fc988909a746bf843c101fcfdd9ccd6c16c4cc28a5a0f489b.body"
+  },
+  {
+    "name": "nest-asyncio2",
+    "version": "1.7.2",
+    "filename": "nest_asyncio2-1.7.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/8/f/a/7/28fa701925f894f2bcb1206a5f4e56c5a654290fb6f744bb131ba098.body"
+  },
+  {
+    "name": "importlib_metadata",
+    "version": "9.0.0",
+    "filename": "importlib_metadata-9.0.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/8/9/c/6/289c6f7419360f0297e671f8a8d5f9af72c5243124e001a3663cac72.body"
+  },
+  {
+    "name": "cachetools",
+    "version": "7.2.0",
+    "filename": "cachetools-7.2.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/d/9/5/3/2d953e3d51667e0e5a71fb36698340620a5944ddee1bfdd70ec05113.body"
+  },
+  {
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "filename": "annotated_types-0.8.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/c/6/6/7/2c667a763e0bc93c709e83228dd85ed16ae24e13705712670c4e4e72.body"
+  },
+  {
+    "name": "matplotlib-inline",
+    "version": "0.2.2",
+    "filename": "matplotlib_inline-0.2.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/c/b/f/c/2cbfcb3c43dfe4d68d7e7a63d83ce47abe237b857b71d7f73288f8b1.body"
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "filename": "pyyaml-6.0.3-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/3/7/1/f/2371fbee7eaaf73a4777e13b7f369ad0d19b8bb82d2f61085230c56c.body"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.8.0",
+    "filename": "urllib3-2.8.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/e/0/b/1/2e0b104156b59fc95cf18a269ffed21374c7d170902fa4d96c00004d.body"
+  },
+  {
+    "name": "starlette",
+    "version": "1.6.0",
+    "filename": "starlette-1.6.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/e/d/8/d/2ed8d49f76596599eb0a971c1ffd07310c76c677d7194a31a272961c.body"
+  },
+  {
+    "name": "requests-oauthlib",
+    "version": "2.0.0",
+    "filename": "requests_oauthlib-2.0.0-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/e/c/b/a/2ecba72f4cc3117816f8364f21e7a236c810e36d31486128af54d549.body"
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.46.4",
+    "filename": "pydantic_core-2.46.4-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/2/a/1/6/5/2a165d967faadbffe92667259a54f96f6d3cbf4274c9e0bbd604a512.body"
+  },
+  {
+    "name": "kfp-pipeline-spec",
+    "version": "2.17.0",
+    "filename": "kfp_pipeline_spec-2.17.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/f/0/2/0/df020feb919746907ce068825ee4b63507d779e90d9703f876b330b3.body"
+  },
+  {
+    "name": "threadpoolctl",
+    "version": "3.6.0",
+    "filename": "threadpoolctl-3.6.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/f/0/b/6/df0b6bc126aae474f4f022058643b509b9ee1caa5f1bf3e4e4a4bd7c.body"
+  },
+  {
+    "name": "setuptools",
+    "version": "82.0.1",
+    "filename": "setuptools-82.0.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/f/9/0/b/df90ba6c84bac0ae587d7e5b5a5de66b39386e0a90fe62fc4ec67b53.body"
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.1",
+    "filename": "cryptography-50.0.1-cp311-abi3-manylinux_2_34_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/6/f/8/7/d6f87a692839283476a4005992f7c032204de0fba12f20adcbdae445.body"
+  },
+  {
+    "name": "click",
+    "version": "8.1.8",
+    "filename": "click-8.1.8-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/6/6/4/c/d664c9a7a407afb2aa2a84c02dfafd1c95a6b240972c72dd50b7e96e.body"
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.2",
+    "filename": "typing_inspection-0.4.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/8/7/4/9/d87498713c6bf3fd6cd85abc4629304b110ac53b2ab8bc415c24d41f.body"
+  },
+  {
+    "name": "delta-spark",
+    "version": "3.1.0",
+    "filename": "delta_spark-3.1.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/2/a/f/8/d2af8ff1ba8f5ef2bf55ba481fe06689ddd7633ad32543b0803bb87d.body"
+  },
+  {
+    "name": "SQLAlchemy",
+    "version": "2.1.1",
+    "filename": "sqlalchemy-2.1.1-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/2/9/5/2/d29524e3baaa5a641e85edb8b7d0c11fa368ca099ed1ae62605308c0.body"
+  },
+  {
+    "name": "protobuf",
+    "version": "6.33.6",
+    "filename": "protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/5/6/7/f/d567f15a0c3e40b8c67fa59227ff9d2885120328be57c142d5fd5220.body"
+  },
+  {
+    "name": "zipp",
+    "version": "3.23.1",
+    "filename": "zipp-3.23.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/5/9/0/b/d590bdf80aa5f6230e0e49a9f10b63aa0c44f77ccd99f25a6ad7841a.body"
+  },
+  {
+    "name": "click",
+    "version": "8.5.0",
+    "filename": "click-8.5.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/1/2/5/6/d12564d02d1376184fb3c6d7011e9cac0bdc6b78ff6b6eabf90b5965.body"
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "filename": "cffi-2.1.1-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/1/d/7/0/d1d70e19c64596a9968ee2a810a42c02f22d841a008ee76f9709094f.body"
+  },
+  {
+    "name": "itsdangerous",
+    "version": "2.2.0",
+    "filename": "itsdangerous-2.2.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/d/a/e/7/9/dae791c7e7f37ceeed2b1136e4c2fe2f795c6645ab088d6588854fe7.body"
+  },
+  {
+    "name": "opentelemetry-sdk",
+    "version": "1.45.0",
+    "filename": "opentelemetry_sdk-1.45.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/f/6/6/f/4f66faa3af701651442e6049d48fe1eeaffb7169dc0f6af0ecc8c0c9.body"
+  },
+  {
+    "name": "pyarrow",
+    "version": "25.0.1",
+    "filename": "pyarrow-25.0.1-cp312-cp312-manylinux_2_28_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/6/0/8/5/460859894f4356cdfc0bfeebd53180d4f6736245713a97c5895343dd.body"
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "filename": "six-1.17.0-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/0/0/d/b/400db3c9a550719d76958c9c597bfbff6eb98533f684c02cc870de92.body"
+  },
+  {
+    "name": "SQLAlchemy",
+    "version": "2.0.49",
+    "filename": "sqlalchemy-2.0.49-cp311-cp311-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/2/7/2/4/427248110fc594360f52dc60775d913e6814b32c8ba9ca83da9a23d8.body"
+  },
+  {
+    "name": "pure_eval",
+    "version": "0.2.4",
+    "filename": "pure_eval-0.2.4-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/2/0/3/4/42034c7c91e5dbbe04894ec38f1c44a060efee67e7349bae4cfb1412.body"
+  },
+  {
+    "name": "pydantic",
+    "version": "2.13.5",
+    "filename": "pydantic-2.13.5-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/2/c/9/f/42c9f53fbd71ff1692e35f1e12590f68c2e1edddcfcce7902d51d6ce.body"
+  },
+  {
+    "name": "graphql-relay",
+    "version": "3.2.0",
+    "filename": "graphql_relay-3.2.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/d/b/e/1/4dbe15df7eaa17d5d201ff075501c0f5195926086f2eab6efcb9e71a.body"
+  },
+  {
+    "name": "aiohappyeyeballs",
+    "version": "2.7.1",
+    "filename": "aiohappyeyeballs-2.7.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/4/3/9/8/443989e76bfd4e0f9f84547685a2ec07eb4699a646841aa52d66132e.body"
+  },
+  {
+    "name": "threadpoolctl",
+    "version": "3.7.0",
+    "filename": "threadpoolctl-3.7.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/b/c/2/2/4bc2254e8e4d54c633c048f7452da2dca4b5903c06f90a1620dc81ff.body"
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "filename": "certifi-2026.7.22-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/1/9/6/f/4196fb32cd5477509fa68e914f1472976a27100798a6d4a646f26472.body"
+  },
+  {
+    "name": "pycparser",
+    "version": "3.11",
+    "filename": "pycparser-3.11-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/4/9/f/d/9/49fd9686b2e0f83fd9282d1e6f5b2ce736be30eec0897bdb95b8bf16.body"
+  },
+  {
+    "name": "certifi",
+    "version": "2026.6.17",
+    "filename": "certifi-2026.6.17-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/8/2/b/d/582bd3ebd46f2e59ab4dbbc1aaa74f2d7eaaa93ce5177e2d1289d88f.body"
+  },
+  {
+    "name": "mlflow-tracing",
+    "version": "3.16.1",
+    "filename": "mlflow_tracing-3.16.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/2/6/e/1/526e18cb431c9bd11e7d71c3b583c0857462ba9d563fe8f73a9850a2.body"
+  },
+  {
+    "name": "oauthlib",
+    "version": "4.0.0",
+    "filename": "oauthlib-4.0.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/d/b/c/e/5dbce1fd63eb4e882a51b860de3ee838f3623a2d704aea8ea236d2ee.body"
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/d/e/7/4/5de74aa606aaf8588141cbe765382839ecb0982f091a947770ca6fa8.body"
+  },
+  {
+    "name": "debugpy",
+    "version": "1.8.21",
+    "filename": "debugpy-1.8.21-cp312-cp312-manylinux_2_34_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/4/2/a/f/542afc5e9c6a6aae4a78a4ad7205426dfefb920f663fb93f1f5cd3ae.body"
+  },
+  {
+    "name": "sqlparse",
+    "version": "0.6.0",
+    "filename": "sqlparse-0.6.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/4/c/2/b/54c2bf6a5c680e4c74f9c22ff4982a81dce34abaaac5be0bee6fd233.body"
+  },
+  {
+    "name": "idna",
+    "version": "3.20",
+    "filename": "idna-3.20-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/5/7/8/f/5578f04015bc72d34ccff0865612606d646694de3865112ddef4292f.body"
+  },
+  {
+    "name": "blinker",
+    "version": "1.9.0",
+    "filename": "blinker-1.9.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/5/e/8/9/55e89b09594758366a997abbae14a69af04566121efa35f87cbadc71.body"
+  },
+  {
+    "name": "pandas",
+    "version": "3.0.6",
+    "filename": "pandas-3.0.6-cp314-cp314-manylinux_2_24_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/b/c/8/e/5bc8e2362a155308ecddac4a9a7a7a29ef62697a6b8124d910e46994.body"
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.46.5",
+    "filename": "pydantic_core-2.46.5-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/1/8/6/a/5186aa407a0463f8ebf88eb19532bf1a6817c08a967423d7c5300d3b.body"
+  },
+  {
+    "name": "annotated-doc",
+    "version": "0.0.5",
+    "filename": "annotated_doc-0.0.5-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/5/9/5/3/1/595319f8561b81c05ef5a907d76cc8e99f1a38b2242cfe83146d4d4a.body"
+  },
+  {
+    "name": "kfp",
+    "version": "2.14.6",
+    "filename": "kfp-2.14.6-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/7/0/9/4/b7094cc9444aae62fdf97c9b6bebb6e76d977964f7377e990e2d2af6.body"
+  },
+  {
+    "name": "websocket-client",
+    "version": "1.9.2",
+    "filename": "websocket_client-1.9.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/7/2/e/8/b72e8aa04145b13fbf950f3cae130aca058336fb8a3adcf0c4dc60d3.body"
+  },
+  {
+    "name": "anyio",
+    "version": "4.15.1",
+    "filename": "anyio-4.15.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/7/d/9/a/b7d9a230086177660ab1ad8f7fa1dc27b263e590ff025ddb48285323.body"
+  },
+  {
+    "name": "propcache",
+    "version": "0.5.4",
+    "filename": "propcache-0.5.4-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/2/1/3/e/b213eade4f7365b30c3ecef3f243b0c8782091f0d30251ab5766f662.body"
+  },
+  {
+    "name": "google-cloud-core",
+    "version": "2.8.0",
+    "filename": "google_cloud_core-2.8.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/2/e/1/a/b2e1a9dc24d061968aa1c0327333db1bbc84ab95c0f1705a3977dcbf.body"
+  },
+  {
+    "name": "psutil",
+    "version": "7.2.2",
+    "filename": "psutil-7.2.2-cp36-abi3-manylinux_2_12_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/5/0/1/6/b50161ce80a3ddd3f50977d5414a93660648823b703e10f65f16eeeb.body"
+  },
+  {
+    "name": "opentelemetry-semantic-conventions",
+    "version": "0.66b0",
+    "filename": "opentelemetry_semantic_conventions-0.66b0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/b/3/8/3/bb38347632449c74ea97764cbf225f543a621b71fd10f78eba773f5d.body"
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "filename": "attrs-26.1.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/1/4/e/c/b14ec1286f8ec83b268f9c52cdccd1001d22496d6e01ba5b4fd8aeb4.body"
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.3",
+    "filename": "numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/1/b/0/9/b1b09c55c48c39ee09c8b783fe520228557321a648173acbff822b96.body"
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "filename": "packaging-26.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/1/1/9/0/b11909f451f61fb29636217082b1c638b177c59eac335e0200a136e6.body"
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.11.2",
+    "filename": "matplotlib-3.11.2-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/a/4/7/f/ba47fec451d44c60af77f045a9af21a8b4ce2b1581874544d31d8892.body"
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.54.0",
+    "filename": "uvicorn-0.54.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/9/6/4/8/b964843a394e1e6b5e04fedfbf690f73e3cd0811457bf7b6c856cd8b.body"
+  },
+  {
+    "name": "pandas",
+    "version": "3.0.5",
+    "filename": "pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/b/9/9/a/d/b99ad330dfd2e9e0337861ace33d07fca2ddfd480ba4473963ebc23d.body"
+  },
+  {
+    "name": "fastapi",
+    "version": "0.141.1",
+    "filename": "fastapi-0.141.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/f/2/a/f/1f2af80dc47fb4606790dee011cb90d98f4b9fdb43ec6e9f2bfa3084.body"
+  },
+  {
+    "name": "fonttools",
+    "version": "4.66.0",
+    "filename": "fonttools-4.66.0-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/f/4/8/0/1f480a08882650de3986ee7b15ba2ce7d1071f52905e08216af2c84a.body"
+  },
+  {
+    "name": "httpcore",
+    "version": "1.0.9",
+    "filename": "httpcore-1.0.9-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/6/0/d/3/160d3e8f69a7eca4743b16bea3eecb80155f94e8435ce6481997004c.body"
+  },
+  {
+    "name": "fastapi",
+    "version": "0.142.4",
+    "filename": "fastapi-0.142.4-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/d/8/2/7/1d82725cc7a920c7dc22d1d00edd7dc4e789603796058dba7d670100.body"
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "filename": "pyyaml-6.0.3-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/4/d/b/2/14db28431519983da784ab099b5877cfd0e3f1de0a5da89280702c58.body"
+  },
+  {
+    "name": "httpx",
+    "version": "0.28.1",
+    "filename": "httpx-0.28.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/4/a/a/f/14aaf7643dce3f389cfaa2f24beba9e2d02071e4624c02c288b2a440.body"
+  },
+  {
+    "name": "idna",
+    "version": "3.18",
+    "filename": "idna-3.18-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/e/d/5/5/1ed556defd2a8ab2cc731547ac075b6d45780b497beca6fbad1e4b42.body"
+  },
+  {
+    "name": "yarl",
+    "version": "1.25.1",
+    "filename": "yarl-1.25.1-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/e/d/c/e/1edced45bc158f8c16f29146aec469f65bb006cf4050c1bca9552d4f.body"
+  },
+  {
+    "name": "importlib_metadata",
+    "version": "9.0.1",
+    "filename": "importlib_metadata-9.0.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/1/a/8/d/0/1a8d0b264fd3b1db3a362393d09540ca641daced3821d501de8f0939.body"
+  },
+  {
+    "name": "docstring_parser",
+    "version": "0.18.0",
+    "filename": "docstring_parser-0.18.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/f/3/f/8/cf3f857085093702702c2996bc1326047e2bbb308bddca954509e2f9.body"
+  },
+  {
+    "name": "executing",
+    "version": "2.2.1",
+    "filename": "executing-2.2.1-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/7/1/7/7/c71776559b3ee58698dc5706d3cba13bee9151852400f9bdb490a166.body"
+  },
+  {
+    "name": "opentelemetry-proto",
+    "version": "1.45.0",
+    "filename": "opentelemetry_proto-1.45.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/7/a/8/0/c7a806d032bf58e4ff2a1c16071ce74ea6371a1314e08c469ee400f1.body"
+  },
+  {
+    "name": "google-cloud-storage",
+    "version": "3.17.0",
+    "filename": "google_cloud_storage-3.17.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/8/1/4/1/c8141e5dc50d1792df0fc9e80d743d7c2fbbb03b2e4785f32e294c42.body"
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "filename": "typing_inspection-0.4.4-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/8/1/b/1/c81b19d2e95a7cb8ff8fe4cbb70d2fa0360f2380759c981c54e80322.body"
+  },
+  {
+    "name": "pyasn1",
+    "version": "0.6.4",
+    "filename": "pyasn1-0.6.4-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/2/4/a/2/c24a2c42fae3bb086b84b344284830cdc36abc31cb423704108f9505.body"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.2",
+    "filename": "pyparsing-3.3.2-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/5/0/8/3/c50837a15752f4ba23cc6a2bf8eea64a7b02553b764e138ca6dd2fdf.body"
+  },
+  {
+    "name": "ciso8601",
+    "version": "2.3.3",
+    "filename": "ciso8601-2.3.3-cp311-cp311-manylinux_2_5_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/b/1/5/d/cb15d31befa5cc9d87c3922352867935f651391346256bd3be553852.body"
+  },
+  {
+    "name": "pandas",
+    "version": "3.0.6",
+    "filename": "pandas-3.0.6-cp312-cp312-manylinux_2_24_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/b/9/7/f/cb97f9ae19eb17e745286f025cb82fc5d3cdff1386696c9d47ffdb4f.body"
+  },
+  {
+    "name": "gunicorn",
+    "version": "26.2.0",
+    "filename": "gunicorn-26.2.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/a/d/0/3/cad03ae1f97d57563689688bbdbbc6248d7d6b743574c2d2eacc463e.body"
+  },
+  {
+    "name": "parso",
+    "version": "0.8.7",
+    "filename": "parso-0.8.7-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/a/4/8/5/ca4859a3b60e961769907410c9c819bc33a934afa59f143e504c92ac.body"
+  },
+  {
+    "name": "SQLAlchemy",
+    "version": "2.1.1",
+    "filename": "sqlalchemy-2.1.1-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/a/1/0/e/ca10ec509de3d5e722e269aacd8955c7dbad4872097999037a7a578f.body"
+  },
+  {
+    "name": "gitdb",
+    "version": "4.0.12",
+    "filename": "gitdb-4.0.12-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/c/a/3/b/d/ca3bdcf721b809a008d17825f06b6e2c28bd97b5e2bb8f3f91d9c1ab.body"
+  },
+  {
+    "name": "pyarrow",
+    "version": "25.0.1",
+    "filename": "pyarrow-25.0.1-cp314-cp314-manylinux_2_28_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/f/5/6/c/3f56c3839134999b99d36749bc4b180a4ccf634c3c10646d9b56cd00.body"
+  },
+  {
+    "name": "requests-toolbelt",
+    "version": "1.0.0",
+    "filename": "requests_toolbelt-1.0.0-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/f/e/c/3/3fec34894257a80934e9246a0a3053a6a96740587f3ddbf5b4fa6f02.body"
+  },
+  {
+    "name": "opentelemetry-api",
+    "version": "1.45.1",
+    "filename": "opentelemetry_api-1.45.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/7/8/5/4/37854d7c3cfa0501762a6b65b5ef93aa92f1929de115ece58b803e6a.body"
+  },
+  {
+    "name": "setuptools",
+    "version": "84.0.0",
+    "filename": "setuptools-84.0.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/7/2/a/d/372ad9ff4adce1adccbe73a1199bf4918643dd20cf06b98bb816a416.body"
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.3",
+    "filename": "numpy-2.5.3-cp314-cp314-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/6/f/e/0/36fe0409a64a0a92502fbcc323bcfdd4ab1ff4722afa1b905e53995b.body"
+  },
+  {
+    "name": "h11",
+    "version": "0.16.0",
+    "filename": "h11-0.16.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/0/e/f/1/30ef132248ab98ab0a92d2d15ee6957bdad5542ffbb630d3a32f7721.body"
+  },
+  {
+    "name": "scikit-learn",
+    "version": "1.9.1",
+    "filename": "scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/8/2/e/9/382e9bb9b61c896473b98edc70371ed4edc7eb12f58cb1646823fa9b.body"
+  },
+  {
+    "name": "asynch",
+    "version": "0.3.1",
+    "filename": "asynch-0.3.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/d/4/a/7/3d4a77ef33ab0cf83d895a3fe94019cf0bced4f9d35c52cef4f65d76.body"
+  },
+  {
+    "name": "fonttools",
+    "version": "4.66.0",
+    "filename": "fonttools-4.66.0-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/5/0/8/6/35086794bde3e7293d8bf785b91006ca7b4a5272a48b99b48b01ced0.body"
+  },
+  {
+    "name": "databricks-sdk",
+    "version": "0.143.0",
+    "filename": "databricks_sdk-0.143.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/5/0/5/d/3505dbf21715c5b79c5fd5708d6acb6124a66181338c3a2968bea17a.body"
+  },
+  {
+    "name": "iso8601",
+    "version": "2.1.0",
+    "filename": "iso8601-2.1.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/b/5/d/3/3b5d3007890a5581bb1f751827cc3b97318770393f6b4364d22bb5eb.body"
+  },
+  {
+    "name": "traitlets",
+    "version": "5.16.1",
+    "filename": "traitlets-5.16.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/c/f/9/9/3cf9972d7e183f32267558a027dd05bbc91bc7b7ca370b2511934842.body"
+  },
+  {
+    "name": "docker",
+    "version": "7.2.0",
+    "filename": "docker-7.2.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/c/4/6/b/3c46bb034cfdfd36676d7e8884f51c20318122474c16af5136aed834.body"
+  },
+  {
+    "name": "graphene",
+    "version": "3.4.3",
+    "filename": "graphene-3.4.3-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/3/3/0/4/333048d5c0c26b498aad2a553699758620d14906f61598dd05d0bada.body"
+  },
+  {
+    "name": "pandas-stubs",
+    "version": "3.0.5.260914",
+    "filename": "pandas_stubs-3.0.5.260914-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/e/d/7/3/3ed733d3c6347f0f2229fa71d5f53d8195a6616f0e417ffb07975957.body"
+  },
+  {
+    "name": "pydantic",
+    "version": "2.13.4",
+    "filename": "pydantic-2.13.4-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/3/9/1/9/3/3919357eca09f893629eedf3827f88304089b78068de804a1fd32edd.body"
+  },
+  {
+    "name": "kiwisolver",
+    "version": "1.5.1",
+    "filename": "kiwisolver-1.5.1-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/7/b/e/0/e7be012d46497fd57f7b59ba94f776871b3e13a1aea79c6c1009d52e.body"
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.15.0",
+    "filename": "typing_extensions-4.15.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/0/b/4/f/e0b4f4d1d5b8bb8b844f230fb9255eeabd73b4bd6598e826c4219d4f.body"
+  },
+  {
+    "name": "ipython_pygments_lexers",
+    "version": "1.1.1",
+    "filename": "ipython_pygments_lexers-1.1.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/8/5/d/5/e85d57f13b27e8792f582983bf96fb2eb991f447c01c02bcbf0d1405.body"
+  },
+  {
+    "name": "scikit-learn",
+    "version": "1.9.1",
+    "filename": "scikit_learn-1.9.1-cp314-cp314-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/8/5/4/b/e854b8520b083f72d4b878f31432b0f0231be323f2a17182407f9f88.body"
+  },
+  {
+    "name": "MarkupSafe",
+    "version": "3.0.3",
+    "filename": "markupsafe-3.0.3-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/2/2/9/9/e229949839dd8ce60d3c2e08b6f112908683e95f6dfb0817a955fb07.body"
+  },
+  {
+    "name": "multidict",
+    "version": "6.9.1",
+    "filename": "multidict-6.9.1-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/d/6/1/3/ed61351b04efe95782933a6938b21ba3e5492dce92327029fcfe7b62.body"
+  },
+  {
+    "name": "mlflow",
+    "version": "3.16.1",
+    "filename": "mlflow-3.16.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/4/b/2/c/e4b2c08b378a90e849477bf2af5be36c6170497aa93c44c3258030b9.body"
+  },
+  {
+    "name": "stack-data",
+    "version": "0.6.3",
+    "filename": "stack_data-0.6.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/5/9/9/b/e599b6418d10d681ba6db09fb679a0e09e0381cdddc5ba6309439496.body"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.3",
+    "filename": "pyparsing-3.3.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/b/1/9/1/eb191316105c4d39809788cbc595af2313b33a8242498096126657d4.body"
+  },
+  {
+    "name": "joblib",
+    "version": "1.6.0",
+    "filename": "joblib-1.6.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/1/3/3/6/e133652aa63b050ce98b6df151cfb82e4a4a074936713c6324bddd5a.body"
+  },
+  {
+    "name": "py4j",
+    "version": "0.10.9.7",
+    "filename": "py4j-0.10.9.7-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/c/d/3/e/ecd3ed0c129c884b9532c206c15066913e32e2dfd91654c9dec70b36.body"
+  },
+  {
+    "name": "aiohttp",
+    "version": "3.14.3",
+    "filename": "aiohttp-3.14.3-cp312-cp312-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/e/c/3/1/0/ec310f5950ab0fd48e99f21858f0e51b938373a16c9c70339b866dd3.body"
+  },
+  {
+    "name": "leb128",
+    "version": "1.0.9",
+    "filename": "leb128-1.0.9-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/f/d/7/f/afd7fc5049215c86944428ff07dc1cdca3ef2fc23d6b9e406b41318d.body"
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.53.0",
+    "filename": "uvicorn-0.53.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/6/0/7/9/a6079daf7048ec0a1934ca01771a87c3614ab9b6ff61099aec5f83a1.body"
+  },
+  {
+    "name": "lz4",
+    "version": "4.4.5",
+    "filename": "lz4-4.4.5-cp311-cp311-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/6/5/5/2/a655233e50ff476812ef946fee7f540effea3b28f8cbf6f90c6ee849.body"
+  },
+  {
+    "name": "yarl",
+    "version": "1.25.1",
+    "filename": "yarl-1.25.1-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/0/b/3/e/a0b3e2db8c5ee78f3eda5f1b50c0559d616ce39f2a9d22192db85ca1.body"
+  },
+  {
+    "name": "GitPython",
+    "version": "3.1.62",
+    "filename": "gitpython-3.1.62-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/8/d/4/a/a8d4af79390d5d08b1a83b7307563bfa404cbd46257f8d22a8f6a97d.body"
+  },
+  {
+    "name": "tabulate",
+    "version": "0.10.0",
+    "filename": "tabulate-0.10.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/8/e/d/f/a8edf24f79568fd3159f4511c32b859efea8625f681a15125b978d64.body"
+  },
+  {
+    "name": "jedi",
+    "version": "0.20.0",
+    "filename": "jedi-0.20.0-py2-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/d/4/e/c/ad4ec3a9ff43fafb878b0db26f106fd717ebbb34e671c139e303e53b.body"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "filename": "charset_normalizer-3.5.1-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/5/3/d/9/a53d9d02007d25d5502376d1cb0d8e355e6419a4a9179ca3bc6fd9a1.body"
+  },
+  {
+    "name": "platformdirs",
+    "version": "4.11.8",
+    "filename": "platformdirs-4.11.8-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/b/6/b/2/ab6b23a91287506b431608026124766bf39e1df7a61534c80338be69.body"
+  },
+  {
+    "name": "scipy",
+    "version": "1.18.1",
+    "filename": "scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/b/9/b/d/ab9bd6f23d39e2581d343a13e3a5c48e8a1b1f1019e959bee33c42b4.body"
+  },
+  {
+    "name": "opentelemetry-api",
+    "version": "1.45.0",
+    "filename": "opentelemetry_api-1.45.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/1/f/4/8/a1f48d0c85e78de41408922b35909ddb7cc1d5b1b75e91234315f1df.body"
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.11.2",
+    "filename": "matplotlib-3.11.2-cp314-cp314-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/1/4/0/5/a140596a6f49c33280fea73820c66869db64053233983a1f26fa3496.body"
+  },
+  {
+    "name": "Werkzeug",
+    "version": "3.1.8",
+    "filename": "werkzeug-3.1.8-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/c/f/4/f/acf4fd6c256913acd9e5a7a7ef0969968b134507671c12bde829b8ec.body"
+  },
+  {
+    "name": "zstd",
+    "version": "1.5.7.3",
+    "filename": "zstd-1.5.7.3-cp311-cp311-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/3/1/f/4/a31f4f9d42ec5bc949c10b7893be95038c7f2328217a9237fec527b4.body"
+  },
+  {
+    "name": "zipp",
+    "version": "4.1.0",
+    "filename": "zipp-4.1.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/a/e/4/3/7/ae4373cec48f7725665273a898a1c1c6bb89464ae81e2d57d920fc2e.body"
+  },
+  {
+    "name": "pillow",
+    "version": "12.3.0",
+    "filename": "pillow-12.3.0-cp314-cp314-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/6/d/5/1/96d51e4ebd2be5532d551dc54d8501899532a7e1e67b84267b2cec22.body"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.2",
+    "filename": "charset_normalizer-3.5.2-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/6/b/0/6/96b063c1be7384d9c6163f4187ab35c1986a15d42e867b22c844fab7.body"
+  },
+  {
+    "name": "frozenlist",
+    "version": "1.8.0",
+    "filename": "frozenlist-1.8.0-cp312-cp312-manylinux_2_5_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/0/6/2/9/90629d2963e6104de5c4b4276ee785bfcd0629712dbb57693662d745.body"
+  },
+  {
+    "name": "smmap",
+    "version": "5.0.3",
+    "filename": "smmap-5.0.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/2/4/4/6/9244600f8e2b194d677e48b8b8b4b1b22a61d0b1cafabb3aa232bd86.body"
+  },
+  {
+    "name": "infi.clickhouse-orm",
+    "version": "2.1.3",
+    "filename": "infi.clickhouse_orm-2.1.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/d/d/3/e/9dd3eaf9ea236322e996be647835227da6aa77c25d4fc0e45751d82f.body"
+  },
+  {
+    "name": "clickhouse-driver",
+    "version": "0.2.10",
+    "filename": "clickhouse_driver-0.2.10-cp311-cp311-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/d/4/7/b/9d47b16945f7b03467980f70838124bf703f7c4e0deebf15f64d24ce.body"
+  },
+  {
+    "name": "pycparser",
+    "version": "3.0",
+    "filename": "pycparser-3.0-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/4/d/0/2/94d022fb6c12e6dc453f3090252f397a80e9c2dbb7341fb45c1b150f.body"
+  },
+  {
+    "name": "ipython",
+    "version": "9.17.1",
+    "filename": "ipython-9.17.1-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/5/9/3/d/9593daa74b80c7d09944d95ef763c997b0388775db64afdd06415626.body"
+  },
+  {
+    "name": "Mako",
+    "version": "1.4.3",
+    "filename": "mako-1.4.3-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/a/b/e/d/9abeda35e1626e881487d460c38a29cada1a5a363912a41a1d1dd70b.body"
+  },
+  {
+    "name": "multidict",
+    "version": "6.9.1",
+    "filename": "multidict-6.9.1-cp314-cp314-manylinux_2_17_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/a/a/f/a/9aafa11e26d179429813a03b1d50e45257b4ed08d07be488b21915f2.body"
+  },
+  {
+    "name": "prompt_toolkit",
+    "version": "3.0.53",
+    "filename": "prompt_toolkit-3.0.53-py3-none-any.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/a/9/7/a/9a97ae9e6c46d1ed1a91b9c60ea5ac0925fd6b4cd080ac41e68138b6.body"
+  },
+  {
+    "name": "contourpy",
+    "version": "1.4.0",
+    "filename": "contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.whl",
+    "cache_path": "/home/usman/.cache/pip/http-v2/9/a/9/2/6/9a926243f3c5fd39ebd3d9552fc85bf7e36eec7bb160784fc1077a4d.body"
+  }
+]

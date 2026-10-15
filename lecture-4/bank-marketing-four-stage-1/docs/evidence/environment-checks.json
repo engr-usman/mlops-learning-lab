@@ -1,0 +1,204 @@
+[
+  {
+    "check": "microk8s-status",
+    "utc": "2026-10-13T11:07:48.277776+00:00",
+    "command": [
+      "microk8s",
+      "status"
+    ],
+    "exit_code": 1,
+    "log": "environment-microk8s-status.log"
+  },
+  {
+    "check": "juju-status",
+    "utc": "2026-10-13T11:07:48.396439+00:00",
+    "command": [
+      "juju",
+      "status",
+      "--format",
+      "short"
+    ],
+    "exit_code": 1,
+    "log": "environment-juju-status.log"
+  },
+  {
+    "check": "docker-images",
+    "utc": "2026-10-13T11:07:48.516040+00:00",
+    "command": [
+      "docker",
+      "image",
+      "inspect",
+      "bank-marketing-kfp-four-stage:v1",
+      "--format",
+      "{{.Id}}"
+    ],
+    "exit_code": 1,
+    "log": "environment-docker-images.log"
+  },
+  {
+    "check": "nodes",
+    "utc": "2026-10-13T11:07:48.539392+00:00",
+    "command": [
+      "/snap/microk8s/current/kubectl",
+      "--kubeconfig",
+      "/home/usman/Desktop/mlops-k8s/infrastructure/juju/microk8s-kubeconfig.yaml",
+      "--request-timeout=5s",
+      "get",
+      "nodes",
+      "-o",
+      "wide"
+    ],
+    "exit_code": 1,
+    "log": "environment-nodes.log"
+  },
+  {
+    "check": "kubeflow-health",
+    "utc": "2026-10-13T11:07:48.600069+00:00",
+    "command": [
+      "/snap/microk8s/current/kubectl",
+      "--kubeconfig",
+      "/home/usman/Desktop/mlops-k8s/infrastructure/juju/microk8s-kubeconfig.yaml",
+      "--request-timeout=5s",
+      "get",
+      "pods",
+      "-n",
+      "kubeflow",
+      "-o",
+      "wide"
+    ],
+    "exit_code": 1,
+    "log": "environment-kubeflow-health.log"
+  },
+  {
+    "check": "admin-workflows",
+    "utc": "2026-10-13T11:07:48.646102+00:00",
+    "command": [
+      "/snap/microk8s/current/kubectl",
+      "--kubeconfig",
+      "/home/usman/Desktop/mlops-k8s/infrastructure/juju/microk8s-kubeconfig.yaml",
+      "--request-timeout=5s",
+      "get",
+      "workflows",
+      "-n",
+      "admin"
+    ],
+    "exit_code": 1,
+    "log": "environment-admin-workflows.log"
+  },
+  {
+    "check": "mlflow-health",
+    "utc": "2026-10-13T11:07:48.705291+00:00",
+    "command": [
+      "/snap/microk8s/current/kubectl",
+      "--kubeconfig",
+      "/home/usman/Desktop/mlops-k8s/infrastructure/juju/microk8s-kubeconfig.yaml",
+      "--request-timeout=5s",
+      "get",
+      "pods,svc,pvc",
+      "-n",
+      "mlops"
+    ],
+    "exit_code": 1,
+    "log": "environment-mlflow-health.log"
+  },
+  {
+    "check": "metadata-writer-logs",
+    "utc": "2026-10-13T11:07:48.752750+00:00",
+    "command": [
+      "/snap/microk8s/current/kubectl",
+      "--kubeconfig",
+      "/home/usman/Desktop/mlops-k8s/infrastructure/juju/microk8s-kubeconfig.yaml",
+      "--request-timeout=5s",
+      "logs",
+      "kfp-metadata-writer-0",
+      "-n",
+      "kubeflow",
+      "--tail=100",
+      "--since=1h"
+    ],
+    "exit_code": 1,
+    "log": "environment-metadata-writer-logs.log"
+  },
+  {
+    "check": "mysql-logs",
+    "utc": "2026-10-13T11:07:48.823078+00:00",
+    "command": [
+      "/snap/microk8s/current/kubectl",
+      "--kubeconfig",
+      "/home/usman/Desktop/mlops-k8s/infrastructure/juju/microk8s-kubeconfig.yaml",
+      "--request-timeout=5s",
+      "logs",
+      "mysql-db-0",
+      "-n",
+      "kubeflow",
+      "--tail=100",
+      "--since=1h"
+    ],
+    "exit_code": 1,
+    "log": "environment-mysql-logs.log"
+  },
+  {
+    "check": "metadata-grpc-logs",
+    "utc": "2026-10-13T11:07:48.882132+00:00",
+    "command": [
+      "/snap/microk8s/current/kubectl",
+      "--kubeconfig",
+      "/home/usman/Desktop/mlops-k8s/infrastructure/juju/microk8s-kubeconfig.yaml",
+      "--request-timeout=5s",
+      "logs",
+      "deployment/metadata-grpc-service",
+      "-n",
+      "kubeflow",
+      "--tail=100",
+      "--since=1h"
+    ],
+    "exit_code": 1,
+    "log": "environment-metadata-grpc-logs.log"
+  },
+  {
+    "check": "ml-pipeline-logs",
+    "utc": "2026-10-13T11:07:48.938753+00:00",
+    "command": [
+      "/snap/microk8s/current/kubectl",
+      "--kubeconfig",
+      "/home/usman/Desktop/mlops-k8s/infrastructure/juju/microk8s-kubeconfig.yaml",
+      "--request-timeout=5s",
+      "logs",
+      "deployment/ml-pipeline",
+      "-n",
+      "kubeflow",
+      "--tail=100",
+      "--since=1h"
+    ],
+    "exit_code": 1,
+    "log": "environment-ml-pipeline-logs.log"
+  },
+  {
+    "check": "containerd-images",
+    "utc": "2026-10-13T11:07:48.987764+00:00",
+    "command": [
+      "/snap/microk8s/current/bin/ctr",
+      "--address",
+      "/var/snap/microk8s/common/run/containerd.sock",
+      "--namespace",
+      "k8s.io",
+      "images",
+      "list"
+    ],
+    "exit_code": 1,
+    "log": "environment-containerd-images.log"
+  },
+  {
+    "check": "docker-build",
+    "utc": "2026-10-13T11:07:48.994216+00:00",
+    "command": [
+      "docker",
+      "build",
+      "-t",
+      "bank-marketing-kfp-four-stage:v1",
+      "."
+    ],
+    "exit_code": 1,
+    "log": "environment-docker-build.log"
+  }
+]

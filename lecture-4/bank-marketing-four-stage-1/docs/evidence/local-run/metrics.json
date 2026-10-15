@@ -1,0 +1,19 @@
+{
+  "logistic_regression_accuracy": 0.9792060491493384,
+  "logistic_regression_precision": 0.9875,
+  "logistic_regression_recall": 0.9706994328922496,
+  "logistic_regression_f1_score": 0.9790276453765491,
+  "decision_tree_accuracy": 0.9834593572778828,
+  "decision_tree_precision": 1.0,
+  "decision_tree_recall": 0.9669187145557656,
+  "decision_tree_f1_score": 0.9831811629024507,
+  "random_forest_accuracy": 0.9825141776937618,
+  "random_forest_precision": 0.9922854387656702,
+  "random_forest_recall": 0.9725897920604915,
+  "random_forest_f1_score": 0.9823389021479714,
+  "gradient_boosting_accuracy": 0.9829867674858223,
+  "gradient_boosting_precision": 0.9922928709055877,
+  "gradient_boosting_recall": 0.9735349716446124,
+  "gradient_boosting_f1_score": 0.982824427480916,
+  "quality_gate_passed": 1.0
+}

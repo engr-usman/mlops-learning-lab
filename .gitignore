@@ -200,3 +200,10 @@ override.tf.json
 .cache/
 tmp/
 temp/
+
+# Local development environments
+.idea/
+.venv-kfp/
+
+# Generated verification artifacts
+.verification/

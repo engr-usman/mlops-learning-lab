@@ -1,0 +1,59 @@
+{
+  "status": "PASS_SPEC_ONLY",
+  "tasks": [
+    "evaluate-candidates",
+    "register-winner",
+    "train-candidates",
+    "validate-dataset"
+  ],
+  "images": [
+    "bank-marketing-kfp-four-stage:v1"
+  ],
+  "artifact_connections": {
+    "train-candidates": {
+      "validated_dataset": [
+        "validate-dataset",
+        "validated_dataset"
+      ],
+      "configuration": [
+        "validate-dataset",
+        "configuration"
+      ],
+      "validation_report": [
+        "validate-dataset",
+        "validation_report"
+      ]
+    },
+    "evaluate-candidates": {
+      "candidate_manifest": [
+        "train-candidates",
+        "candidate_manifest"
+      ],
+      "heldout_dataset": [
+        "train-candidates",
+        "heldout_dataset"
+      ],
+      "split_metadata": [
+        "train-candidates",
+        "split_metadata"
+      ],
+      "configuration": [
+        "validate-dataset",
+        "configuration"
+      ]
+    },
+    "register-winner": {
+      "evaluation_report": [
+        "evaluate-candidates",
+        "evaluation_report"
+      ],
+      "configuration": [
+        "validate-dataset",
+        "configuration"
+      ]
+    }
+  },
+  "sdk_version": "kfp-2.17.0",
+  "schema_version": "2.1.0",
+  "pull_policy": "IfNotPresent"
+}

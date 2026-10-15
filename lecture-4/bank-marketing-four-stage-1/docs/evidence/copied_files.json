@@ -1,0 +1,12 @@
+[
+  "lectures/lecture-03-mlflow/src/config.py",
+  "lectures/lecture-03-mlflow/src/data_validation.py",
+  "lectures/lecture-03-mlflow/src/training.py",
+  "lectures/lecture-03-mlflow/src/evaluation.py",
+  "lectures/lecture-03-mlflow/src/registration.py",
+  "lectures/lecture-03-mlflow/src/pipeline.py",
+  "lectures/lecture-03-mlflow/src/logging_config.py",
+  "lectures/lecture-03-mlflow/configs/config.yaml",
+  "lectures/lecture-03-mlflow/data/balance.csv",
+  "lectures/lecture-03-mlflow/requirements.txt"
+]
