@@ -1,0 +1,67 @@
+# Usage:
+#   docker compose up -d --build            # start the MLflow server and the API
+#   docker compose run --rm trainer         # train + evaluate; promotes a champion
+#   docker compose restart api              # make the API load the new champion
+#   docker compose down                     # stop everything (add -v to delete MLflow data)
+#
+# MLflow UI: http://localhost:5000   API docs: http://localhost:8000/docs
+
+# Every service runs the same image; only the command differs.
+x-app: &app
+  build: .
+  image: bank-marketing:latest
+
+services:
+  mlflow:
+    <<: *app
+    command: >
+      mlflow server --host 0.0.0.0 --port 5000
+      --backend-store-uri sqlite:////mlflow/mlflow.db
+      --artifacts-destination /mlflow/artifacts
+      --serve-artifacts
+      --allowed-hosts mlflow:5000,localhost:5000,127.0.0.1:5000
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-data:/mlflow  # runs, registry and model files survive restarts
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  trainer:
+    <<: *app
+    profiles: [pipeline]  # only runs when asked: docker compose run --rm trainer
+    command: sh -c "python train.py && python evaluate.py"
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro  # change settings without rebuilding the image
+      - ./data:/app/data                   # reads data.csv, writes test.csv
+      - ./logs:/app/logs
+    depends_on:
+      mlflow:
+        condition: service_healthy
+
+  api:
+    <<: *app
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./logs:/app/logs
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  mlflow-data:

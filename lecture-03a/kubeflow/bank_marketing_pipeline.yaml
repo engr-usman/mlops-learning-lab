@@ -1,0 +1,192 @@
+# PIPELINE DEFINITION
+# Name: bank-marketing
+# Description: Ingest, validate, train and evaluate the term-deposit classifier
+# Inputs:
+#    model: str [Default: 'random_forest']
+#    source: str [Default: 'https://archive.ics.uci.edu/static/public/222/bank+marketing.zip']
+components:
+  comp-evaluate:
+    executorLabel: exec-evaluate
+    inputDefinitions:
+      artifacts:
+        test_data:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+      parameters:
+        version:
+          parameterType: STRING
+  comp-ingest:
+    executorLabel: exec-ingest
+    inputDefinitions:
+      parameters:
+        source:
+          parameterType: STRING
+    outputDefinitions:
+      artifacts:
+        data:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+  comp-train:
+    executorLabel: exec-train
+    inputDefinitions:
+      artifacts:
+        data:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+      parameters:
+        model:
+          parameterType: STRING
+    outputDefinitions:
+      artifacts:
+        test_data:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+      parameters:
+        version:
+          parameterType: STRING
+  comp-validate:
+    executorLabel: exec-validate
+    inputDefinitions:
+      artifacts:
+        data:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+deploymentSpec:
+  executors:
+    exec-evaluate:
+      container:
+        args:
+        - --version
+        - '{{$.inputs.parameters[''version'']}}'
+        - --data
+        - '{{$.inputs.artifacts[''test_data''].path}}'
+        command:
+        - python
+        - evaluate.py
+        env:
+        - name: MLFLOW_TRACKING_URI
+          value: http://mlflow.mlflow.svc.cluster.local:5000
+        image: docker.io/usm87/bank-marketing-kfp:v2
+    exec-ingest:
+      container:
+        args:
+        - --source
+        - '{{$.inputs.parameters[''source'']}}'
+        - --out
+        - '{{$.outputs.artifacts[''data''].path}}'
+        command:
+        - python
+        - ingest.py
+        image: docker.io/usm87/bank-marketing-kfp:v2
+    exec-train:
+      container:
+        args:
+        - --model
+        - '{{$.inputs.parameters[''model'']}}'
+        - --data
+        - '{{$.inputs.artifacts[''data''].path}}'
+        - --test-out
+        - '{{$.outputs.artifacts[''test_data''].path}}'
+        - --version-out
+        - '{{$.outputs.parameters[''version''].output_file}}'
+        command:
+        - python
+        - train.py
+        env:
+        - name: MLFLOW_TRACKING_URI
+          value: http://mlflow.mlflow.svc.cluster.local:5000
+        image: docker.io/usm87/bank-marketing-kfp:v2
+    exec-validate:
+      container:
+        args:
+        - '{{$.inputs.artifacts[''data''].path}}'
+        command:
+        - python
+        - data_validation.py
+        image: docker.io/usm87/bank-marketing-kfp:v2
+pipelineInfo:
+  description: Ingest, validate, train and evaluate the term-deposit classifier
+  name: bank-marketing
+root:
+  dag:
+    tasks:
+      evaluate:
+        cachingOptions: {}
+        componentRef:
+          name: comp-evaluate
+        dependentTasks:
+        - train
+        inputs:
+          artifacts:
+            test_data:
+              taskOutputArtifact:
+                outputArtifactKey: test_data
+                producerTask: train
+          parameters:
+            version:
+              taskOutputParameter:
+                outputParameterKey: version
+                producerTask: train
+        taskInfo:
+          name: evaluate
+      ingest:
+        cachingOptions:
+          enableCache: true
+        componentRef:
+          name: comp-ingest
+        inputs:
+          parameters:
+            source:
+              componentInputParameter: source
+        taskInfo:
+          name: ingest
+      train:
+        cachingOptions: {}
+        componentRef:
+          name: comp-train
+        dependentTasks:
+        - ingest
+        - validate
+        inputs:
+          artifacts:
+            data:
+              taskOutputArtifact:
+                outputArtifactKey: data
+                producerTask: ingest
+          parameters:
+            model:
+              componentInputParameter: model
+        taskInfo:
+          name: train
+      validate:
+        cachingOptions:
+          enableCache: true
+        componentRef:
+          name: comp-validate
+        dependentTasks:
+        - ingest
+        inputs:
+          artifacts:
+            data:
+              taskOutputArtifact:
+                outputArtifactKey: data
+                producerTask: ingest
+        taskInfo:
+          name: validate
+  inputDefinitions:
+    parameters:
+      model:
+        defaultValue: random_forest
+        isOptional: true
+        parameterType: STRING
+      source:
+        defaultValue: https://archive.ics.uci.edu/static/public/222/bank+marketing.zip
+        isOptional: true
+        parameterType: STRING
+schemaVersion: 2.1.0
+sdkVersion: kfp-2.17.0

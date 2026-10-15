@@ -1,0 +1,13 @@
+# Keep the build context small and the image free of local state.
+.venv
+__pycache__
+*.pyc
+.DS_Store
+.ipynb_checkpoints
+
+# Mounted at runtime or produced by runs, never baked into the image
+data
+logs
+mlruns
+mlflow.db
+notebook

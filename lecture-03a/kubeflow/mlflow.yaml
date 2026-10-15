@@ -1,0 +1,82 @@
+# MLflow tracking server + model registry inside the cluster, for the pipeline's
+# train and evaluate steps. Same server settings as docker-compose.yml.
+#
+#   kubectl apply -f kubeflow/mlflow.yaml
+#   kubectl -n mlflow rollout status deploy/mlflow
+#   kubectl -n mlflow port-forward svc/mlflow 5000:5000   # UI at http://localhost:5000
+#
+# Replace the image below with the one you pushed.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mlflow
+  labels:
+    istio-injection: disabled  # plain HTTP from pipeline pods, no Istio auth in the way
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mlflow-data
+  namespace: mlflow
+spec:
+  accessModes: [ReadWriteOnce]
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow
+  namespace: mlflow
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate  # the volume can only be mounted by one pod at a time
+  selector:
+    matchLabels:
+      app: mlflow
+  template:
+    metadata:
+      labels:
+        app: mlflow
+    spec:
+      containers:
+        - name: mlflow
+          image: docker.io/usm87/bank-marketing-kfp:v2
+          command:
+            - mlflow
+            - server
+            - --host=0.0.0.0
+            - --port=5000
+            - --backend-store-uri=sqlite:////mlflow/mlflow.db
+            - --artifacts-destination=/mlflow/artifacts
+            - --serve-artifacts
+            - --allowed-hosts=mlflow.mlflow.svc.cluster.local:5000,mlflow.mlflow:5000,mlflow:5000,localhost:5000,127.0.0.1:5000
+          ports:
+            - containerPort: 5000
+          volumeMounts:
+            - name: data
+              mountPath: /mlflow
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: mlflow-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mlflow
+  namespace: mlflow
+spec:
+  selector:
+    app: mlflow
+  ports:
+    - port: 5000
+      targetPort: 5000

@@ -1,0 +1,108 @@
+# Project configuration: paths, schema and validation rules for the Bank Marketing dataset.
+# Loaded by config_loader.py. Paths are relative to the project root so they work inside a container.
+
+paths:
+  data_dir: data
+  raw_data_path: data/bank-full.csv  # original, semicolon-separated
+  data_path: data/data.csv
+  test_data_path: data/test.csv
+  log_dir: logs
+  mlflow_db: mlflow.db  # MLflow tracking database (runs, params, metrics, registry)
+  mlflow_artifacts: mlruns  # saved model files
+
+# Target: has the client subscribed a term deposit?
+target:
+  name: y
+  classes: ["no", "yes"]  # quoted so YAML doesn't read them as booleans
+
+# Numeric features with their allowed [min, max] range, inclusive
+numeric_features:
+  age: [18, 100]
+  balance: [-20000, 200000]  # average yearly balance in euros
+  day: [1, 31]
+  duration: [0, 5000]  # last call length in seconds; only known after the call ends
+  campaign: [1, 100]
+  pdays: [-1, 999]  # -1 means the client was not previously contacted
+  previous: [0, 300]
+
+# Categorical features with their allowed values (from bank-names.txt).
+# "unknown" is the dataset's marker for a missing value.
+categorical_features:
+  job:
+    - admin.
+    - unknown
+    - unemployed
+    - management
+    - housemaid
+    - entrepreneur
+    - student
+    - blue-collar
+    - self-employed
+    - retired
+    - technician
+    - services
+  marital: [married, divorced, single]
+  education: [unknown, secondary, primary, tertiary]
+  default: ["yes", "no"]
+  housing: ["yes", "no"]
+  loan: ["yes", "no"]
+  contact: [unknown, telephone, cellular]
+  month: [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+  poutcome: [unknown, other, failure, success]
+
+# Expected column order in data.csv
+columns:
+  - age
+  - job
+  - marital
+  - education
+  - default
+  - balance
+  - housing
+  - loan
+  - contact
+  - day
+  - month
+  - duration
+  - campaign
+  - pdays
+  - previous
+  - poutcome
+  - y
+
+validation:
+  min_rows: 1000
+  max_duplicate_fraction: 0.01  # duplicates above this fraction fail validation
+
+split:
+  test_size: 0.2
+  random_state: 42  # same seed gives the same split every run, so results are reproducible
+
+training:
+  # duration is the call length, only known after the call ends, so it leaks the answer
+  drop_features: [duration]
+  model: random_forest  # which entry under `models` train.py uses by default
+  models:
+    logistic_regression:
+      C: 1.0
+      max_iter: 1000
+      class_weight: balanced  # only ~12% of clients say "yes"; weight them up
+    random_forest:
+      n_estimators: 200
+      max_depth: 15
+      min_samples_leaf: 5
+      class_weight: balanced
+      n_jobs: -1
+
+mlflow:
+  experiment_name: bank-marketing
+  registered_model_name: bank-marketing-classifier
+  champion_alias: champion  # the version the API serves
+  # A new version is promoted to champion only if it reaches these on the test set
+  # and its roc_auc is at least the current champion's.
+  promotion_thresholds:
+    roc_auc: 0.75
+    recall: 0.50  # catching likely subscribers matters more than accuracy here
+
+logging:
+  level: INFO
