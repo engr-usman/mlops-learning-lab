@@ -143,7 +143,7 @@ deploymentSpec:
         - python
         - -m
         - src.component_cli
-        image: docker.io/usm87/bank-marketing-kfp-four-stage:v2
+        image: docker.io/usm87/bank-marketing-kfp-four-stage:v4
         resources:
           cpuLimit: 1.0
           cpuRequest: 0.25
@@ -171,7 +171,7 @@ deploymentSpec:
         - python
         - -m
         - src.component_cli
-        image: docker.io/usm87/bank-marketing-kfp-four-stage:v2
+        image: docker.io/usm87/bank-marketing-kfp-four-stage:v4
         resources:
           cpuLimit: 1.0
           cpuRequest: 0.1
@@ -207,7 +207,7 @@ deploymentSpec:
         - python
         - -m
         - src.component_cli
-        image: docker.io/usm87/bank-marketing-kfp-four-stage:v2
+        image: docker.io/usm87/bank-marketing-kfp-four-stage:v4
         resources:
           cpuLimit: 2.0
           cpuRequest: 0.5
@@ -237,7 +237,7 @@ deploymentSpec:
         - python
         - -m
         - src.component_cli
-        image: docker.io/usm87/bank-marketing-kfp-four-stage:v2
+        image: docker.io/usm87/bank-marketing-kfp-four-stage:v4
         resources:
           cpuLimit: 1.0
           cpuRequest: 0.1
